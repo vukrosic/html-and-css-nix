@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIX | Workshop №1 | Landing page</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrapper"></div>
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav");
+
+    menuToggle.addEventListener("click", () => {
+      menuToggle.classList.toggle("is-active");
+      nav.classList.toggle("is-active");
+    })
+  </script>
+</body>
+
+</html>
