@@ -2,24 +2,96 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NIX | Workshop №1 | Landing page</title>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIX | Workshop №1 | Landing page</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="wrapper"></div>
-  <script>
-    const menuToggle = document.querySelector(".menu-toggle");
-    const nav = document.querySelector(".nav");
+    <div class="wrapper">
+        <header class="hero">
+            <div class="logo-container">
+                <img class="logo" src="assets/logo.png" />
+            </div>
+            <ul class="navbar-list">
+                <li class="navbar-element"><a href="default.asp">ABOUT ME</a></li>
+                <li class="navbar-element"><a href="news.asp">MY TECHNOLOGIES</a></li>
+                <li class="navbar-element"><a href="contact.asp">PROJECTS</a></li>
+                <li class="navbar-element"><a href="about.asp">CONTACTS</a></li>
+            </ul>
+        </header>
 
-    menuToggle.addEventListener("click", () => {
-      menuToggle.classList.toggle("is-active");
-      nav.classList.toggle("is-active");
-    })
-  </script>
+        <div class="title-container">
+            <img class="arrow-icon" src="assets/arrow-down.svg" />
+            <h1 class="title">Hello, I am Vuk Rosić frontend developer</h1>
+            <img class="arrow-icon" src="assets/arrow-up.svg" />
+        </div>
+
+        <div class="paragraph-wrapper">
+            <p class="paragraph">I've worked on various web projects, focusing on responsive designs and cross-browser compatibility. I'm proficient in React, Angular, and Git.</p>
+            <p class="paragraph">I'm seeking opportunities to grow my skills and contribute to innovative projects. If you need a frontend developer who values user experience, let's connect!</p>
+        </div>
+
+
+        <div class="my-technologies-wrapper">
+            <h1 class="my-technologies">MY TECHNOLOGIES</h1>
+            <div class="technologies-box">
+                <div class="technologies-header">
+                    <img class="technologies-logo" src="assets/html.svg" />
+                    <h2>HTML</h2>
+                </div>
+                <ul class="technologies-ul">
+                    <li>ELEMENTS</li>
+                    <li>ATTRIBUTES</li>
+                    <li>FORMS</li>
+                    <li>CANVAS</li>
+                    <li>SEMANTIC TAGS</li>
+                    <li>ACCESSIBILITY</li>
+                </ul>
+            </div>
+            <div class="technologies-box">
+                <div class="technologies-header">
+                    <img class="technologies-logo" src="assets/css.svg" />
+                    <h2>CSS</h2>
+                </div>
+                <ul class="technologies-ul">
+                    <li>SELECTOR</li>
+                    <li>COLORS</li>
+                    <li>BOX MODEL</li>
+                    <li>FLEX</li>
+                    <li>GRID</li>
+                </ul>
+            </div>
+            <div class="technologies-box">
+                <div class="technologies-header">
+                    <img class="technologies-logo" src="assets/js.svg" />
+                    <h2>JAVASCRIPT</h2>
+                </div>
+                <ul class="technologies-ul">
+                    <li>SELECTOR</li>
+                    <li>COLORS</li>
+                    <li>BOX MODEL</li>
+                    <li>FLEX</li>
+                    <li>GRID</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const nav = document.querySelector(".nav");
+
+        menuToggle.addEventListener("click", () => {
+            menuToggle.classList.toggle("is-active");
+            nav.classList.toggle("is-active");
+        })
+    </script>
 </body>
 
 </html>
